@@ -6,160 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumirail</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        nav {
-            background-color: #444;
-            color: white;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-
-        nav * {
-            color: white;
-            text-decoration: none;
-        }
-
-        #headerImg
-        {
-            padding:20px;
-        }
-
-        section {
-            padding: 2rem;
-            background-color: #fff;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 60%; /* Adjusted the logo size */
-        }
-
-        h1 {
-            font-size: 2rem;
-            opacity: 80%;
-        }
-
-        h2 {
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 40px;
-        }
-
-        .product-description {
-            text-align: justify;
-        }
-
-        .team-members {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .team-member {
-            text-align: center;
-            margin: 1rem;
-        }
-
-        .team-member img {
-            width: 20vh;
-            height: 20vh;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 0.5rem;
-            border: 5px solid white;
-            box-shadow: 0px 0px 8px #00000069;
-        }
-
-        .caption {
-            font-size: 0.8rem;
-            color: #777;
-        }
-
-        .parts-list {
-            list-style: none;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        .parts-list-item {
-            padding: 1rem;
-        }
-
-        .parts-list-item strong {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .software-flow {
-            list-style: none;
-            padding: 10px;
-            margin-top: 20px;
-
-        }
-
-        .container
-        {
-            margin-top: 20px;
-        }
-
-        .software-flow-item {
-            margin-bottom: 1rem;
-        }
-
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .product-image {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .image-item {
-            max-width: 100%;
-            border-radius: 5px;
-            max-height: 50vh;
-            transition: transform 0.5s ease-in-out;
-            border: 5px solid white;
-            box-shadow: 0px 0px 8px #00000069;
-
-        }
-
-        .caption {
-            margin-top: 1rem;
-            font-size: 0.8rem;
-            color: #777;
-        }
-
-    </style>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -223,24 +70,33 @@
     
         <div class="image-container">
             <div class="product-image">
+                <img src="images/Picture1.png" alt="Product Image 1" class="image-item">
+                <p class="caption">Final Product</p>
+            </div>
+            <div class="product-image">
+                <img src="images/wiring.png" alt="Product Image 1" class="image-item">
+                <p class="caption">Led Mounting And Wiring Diagram</p>
+            </div>
+            <div class="product-image">
                 <img src="images/blockDiagram.jpg" alt="Product Image 1" class="image-item">
                 <p class="caption">Block Diagram</p>
             </div>
     
             <div class="product-image">
-                <img src="images/wiringDiagram.jpg" alt="Product Image 2" class="image-item">
+                <img src="images/wiringDiagram.png" alt="Product Image 2" class="image-item">
                 <p class="caption">Wiring Diagram</p>
             </div>
     
             <div class="product-image">
-                <img src="images/map.jpg" alt="Product Image 3" class="image-item">
-                <p class="caption">Proposed Map Layout</p>
+                <img src="images/pcb.png" alt="Product Image 3" class="image-item">
+                <p class="caption">PCB Schematic</p>
             </div>
 
             <div class="product-image">
                 <img src="images/prototype.jpg" alt="Product Image 3" class="image-item">
                 <p class="caption">Initial Prototype</p>
             </div>
+
         </div>
     </section>
     
@@ -249,27 +105,32 @@
         <h2>Parts List</h2>
         <ul class="parts-list">
             <li class="parts-list-item">
-                <strong>Microcontroller (+ WiFi/Bluetooth) - ESP-WROOM-32-N4</strong>
+                <img src="images/microcontroller.png" alt="Product Image 3" class="partsImage">
+                <strong class="partsHeader">Microcontroller (+ WiFi/Bluetooth) - ESP-WROOM-32-N4</strong>
                 <p>The ESP-WROOM-32-N4 comes with integrated support for both WIFI and Bluetooth connectivity, allowing the microcontroller to connect to both the Android
                     application and the internet simultaneously. This combined with its availability and ability to host two SPI buses are motivating factors in the
                     selection of the ESP as the microcontroller used.</p>
             </li>
 
             <li class="parts-list-item">
-                <strong>LEDs - PL9283</strong>
+                <img src="images/led.png" alt="Product Image 3" class="partsImage">
+                <strong class="partsHeader">LEDs - PL9283</strong>
                 <p>These LEDs are individually addressable, which will allow us to wire them in series and still have the ability to communicate to each one individually.
                     They are also multicolored which will give us more flexibility in the dynamic nature of the map (e.g., allowing us to change the color of the LED based
                     on the map mode).</p>
             </li>
 
             <li class="parts-list-item">
-                <strong>LED Display - MAX7219 LED DOT MATRIX</strong>
+                <img src="images/ledMatrix.png" alt="Product Image 3" class="partsImage">
+                <strong class="partsHeader">LED Display - MAX7219 LED DOT MATRIX</strong>
                 <p>The bottom corner of our art piece will contain an LED screen that can be interacted with via our mobile application. On top of being able to see the live
                     location of each train through the PL9823 LEDs, a user may also view a specific train’s arrival and departure time on the LED panel.</p>
             </li>
 
             <li class="parts-list-item">
-                <strong>Mobile Application - Android</strong>
+                <img src="images/appLogo.png" alt="Product Image 3" class="partsImage">
+                <strong class="partsHeader">Mobile Application - Android</strong>
+
                 <p>The mobile application will allow the user to connect the art piece to their local WiFi network so the map is able to get train data from the MBTA-API.
                     This data will include train locations, estimated arrival time, train capacity and more. The app will also allow for more personalized functionality such
                     as displaying directions from one point on the map to another or for getting more tailored information on a key train of interest.</p>
@@ -280,6 +141,9 @@
     <section id="flow" class="container software-flow">
         <h2>Software Flow</h2>
         <ul class="software-flow">
+
+            <img src="images/systemFlow.png" alt="Product Image 3" style="width: 100%; margin-bottom: 20px;">
+
             <li class="software-flow-item">
                 <strong>Application Initial Setup</strong>
                 <ul>

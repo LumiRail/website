@@ -55,7 +55,8 @@ h1 {
 
 h2 {
     text-align: center;
-
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .product-description {
@@ -110,6 +111,54 @@ h2 {
 
 }
 
+.container
+{
+    margin-top: 20px;
+}
+
 .software-flow-item {
     margin-bottom: 1rem;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-item {
+    max-width: 100%;
+    border-radius: 5px;
+    max-height: 50vh;
+    transition: transform 0.5s ease-in-out;
+    border: 5px solid white;
+    box-shadow: 0px 0px 8px #00000069;
+
+}
+
+.caption {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.partsImage
+{
+    display: inline-block;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.partsHeader
+{
+    display: inline-block !important;
+    padding-top: 15px;
+    vertical-align: top;
 }

@@ -2,19 +2,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #ebebeb;
     color: #333;
 }
 
 header {
-    background: linear-gradient(#178ce6, #c5e3fa);
+    background: linear-gradient(#178ce6, #254660);
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
 
 nav {
-    background-color: #444;
+    background-color: #254660;
     color: white;
     text-align: center;
     padding: 0.5rem 0;
